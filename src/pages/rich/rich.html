@@ -1,0 +1,26 @@
+<head-nav [chainNetwork]="chainNetwork"></head-nav>
+<ion-content>
+  <ion-grid fixed>
+    <div class="page-content">
+      <ion-grid>
+        <ion-row align-items-start justify-content-center>
+          <loader *ngIf="loading" [type]="'title'"></loader>
+          <div *ngIf="!loading">
+            <h1>{{ chainNetwork.chain }} Rich List</h1>
+            <ion-grid class="grid--table">
+              <ion-row *ngFor="let addr of richlist">
+                <ion-col class="allow-truncated-text">
+                  <a (click)="goToAddress(addr.address)">{{ addr.address }}</a>
+                </ion-col>
+                <ion-col text-right>
+                  {{ addr.balanceCoins }}
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-grid>
+</ion-content>
+<footer [chainNetwork]="chainNetwork"></footer>
