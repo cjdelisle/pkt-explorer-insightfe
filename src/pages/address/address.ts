@@ -67,7 +67,8 @@ export class AddressPage {
             balance: data.balance || 0,
             confirmed: data.balance || 0,
             unconfirmed: data.unconfirmedReceived,
-            addrStr: this.addrStr
+            addrStr: this.addrStr,
+            mined24: data.mined24
           };
           this.loading = false;
         },

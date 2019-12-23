@@ -35,6 +35,12 @@
                     {{ getConvertedNumber(address.unconfirmed, chainNetwork.chain) | number:'1.0-8' }} {{ currencyProvider.currencySymbol }}
                   </ion-note>
                 </ion-item>
+                <ion-item *ngIf="address.mined24">
+                  Mined in the last 24h
+                  <ion-note item-end>
+                    {{ getConvertedNumber(address.mined24, chainNetwork.chain) | number:'1.0-8' }} {{ currencyProvider.currencySymbol }}
+                  </ion-note>
+                </ion-item>
                 <ion-item>
                   Nro. Transactions
                   <ion-note item-end>

@@ -14,6 +14,7 @@ export interface ApiAddr {
   burned: string,
   recvCount: number,
   spentCount: number,
+  mined24: string,
 }
 
 export interface ApiRichRow {
