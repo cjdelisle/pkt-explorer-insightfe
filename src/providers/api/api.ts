@@ -19,7 +19,7 @@ const CurrentEnv = process.env.ENV || 'dev';
 
 const EnvApiHosts: { [env: string]: { [chain: string]: string } } = {
   prod: {
-    default: 'https://api.bitcore.io/api',
+    default: this.defaults.getDefault('%API_PREFIX%'),
     ETH: 'https://api-eth.bitcore.io/api'
   },
   dev: { default: '/api' }
