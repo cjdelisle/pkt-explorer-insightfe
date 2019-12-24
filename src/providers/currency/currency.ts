@@ -43,7 +43,7 @@ export class CurrencyProvider {
         value = value * 1e-18;
         break;
       case 'PKT':
-        value = Math.floor(value / 0x40000000);
+        value = Math.floor(value / 0x40000000 * 100) / 100;
         break;
       default:
         value = value * 1e-8;
