@@ -1,5 +1,7 @@
 # PKT Block Explorer
 
+Status: unmaintained/ran-when-parked - consider using https://github.com/pkt-cash/pkt-explorer instead
+
 This is a frontend which is designed to work with the
 [PKT Explorer Backend](https://github.com/cjdelisle/pkt-explorer-backend).
 It is based on the [Bitcore Insight](https://github.com/bitpay/bitcore/tree/master/packages/insight)
